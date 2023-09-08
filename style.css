@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+/* Header css */
+
+
+.fruit_items{ 
+    margin-left: -200px;
+}
+.fruit_items input{
+    opacity: 0;
+    visibility: hidden;
+}
+.fruit_items .fruit_txt_img{
+    transform:scaleY(0);
+    transform-origin: top;
+    transition: .5s;
+}
+.fruit_items input:checked~.fruit_txt_img{
+    transform:scaleY(1);
+}
